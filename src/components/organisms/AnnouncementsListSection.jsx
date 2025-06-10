@@ -39,9 +39,8 @@ const AnnouncementsListSection = ({
     return announcementDate.toLocaleDateString();
   };
 
-
-  return (
-    &lt;&gt;
+return (
+    <>
       {/* Filter */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -96,9 +95,9 @@ const AnnouncementsListSection = ({
               onDelete={onDeleteAnnouncement}
             />
           ))}
-        </motion.div>
+</motion.div>
       )}
-    &lt;/>
+    </>
   );
 };
 
