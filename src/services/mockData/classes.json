@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Mathematics 101",
+    "subject": "Mathematics",
+    "teacherId": "teacher1",
+    "period": 1,
+    "room": "A101",
+    "studentIds": ["1", "2", "5"]
+  },
+  {
+    "id": "2",
+    "name": "English Literature",
+    "subject": "English",
+    "teacherId": "teacher2",
+    "period": 2,
+    "room": "B205",
+    "studentIds": ["1", "3", "4"]
+  },
+  {
+    "id": "3",
+    "name": "Biology Fundamentals",
+    "subject": "Science",
+    "teacherId": "teacher3",
+    "period": 3,
+    "room": "C301",
+    "studentIds": ["2", "3", "4", "5"]
+  },
+  {
+    "id": "4",
+    "name": "World History",
+    "subject": "History",
+    "teacherId": "teacher4",
+    "period": 4,
+    "room": "D102",
+    "studentIds": ["1", "2", "3", "4", "5"]
+  }
+]

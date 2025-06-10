@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "studentId": "1",
+    "classId": "1",
+    "date": "2024-01-15T08:00:00.000Z",
+    "status": "present",
+    "notes": ""
+  },
+  {
+    "id": "2",
+    "studentId": "2",
+    "classId": "1",
+    "date": "2024-01-15T08:00:00.000Z",
+    "status": "present",
+    "notes": ""
+  },
+  {
+    "id": "3",
+    "studentId": "5",
+    "classId": "1",
+    "date": "2024-01-15T08:00:00.000Z",
+    "status": "late",
+    "notes": "Traffic delay"
+  },
+  {
+    "id": "4",
+    "studentId": "1",
+    "classId": "2",
+    "date": "2024-01-15T09:00:00.000Z",
+    "status": "present",
+    "notes": ""
+  },
+  {
+    "id": "5",
+    "studentId": "3",
+    "classId": "2",
+    "date": "2024-01-15T09:00:00.000Z",
+    "status": "absent",
+    "notes": "Sick"
+  }
+]
