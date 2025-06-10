@@ -21,8 +21,8 @@ const StudentsTable = ({
   studentsLength,
   setShowAddForm
 }) => {
-  return (
-    &lt;&gt;
+return (
+    <>
       {/* Filters */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -137,8 +137,8 @@ const StudentsTable = ({
             </table>
           </div>
         </Card>
-      )}
-    &lt;/>
+)}
+    </>
   );
 };
 
