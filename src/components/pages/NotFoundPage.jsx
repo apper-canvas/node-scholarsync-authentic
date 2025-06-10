@@ -1,9 +1,13 @@
-import { motion } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
-import ApperIcon from '../components/ApperIcon'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import ApperIcon from '@/components/ApperIcon';
+import Heading from '@/components/atoms/Heading';
+import Paragraph from '@/components/atoms/Paragraph';
+import Button from '@/components/atoms/Button';
 
-const NotFound = () => {
-  const navigate = useNavigate()
+const NotFoundPage = () => {
+  const navigate = useNavigate();
 
   return (
     <div className="flex items-center justify-center min-h-[60vh]">
@@ -20,35 +24,35 @@ const NotFound = () => {
         >
           <ApperIcon name="MapPin" className="w-12 h-12 text-surface-400" />
         </motion.div>
-        
-        <h1 className="text-4xl font-heading font-bold text-surface-900 mb-2">
+
+        <Heading as="h1" className="text-4xl font-bold text-surface-900 mb-2">
           404 - Page Not Found
-        </h1>
-        <p className="text-surface-600 mb-6 max-w-md">
+        </Heading>
+        <Paragraph className="text-surface-600 mb-6 max-w-md">
           The page you're looking for doesn't exist. Let's get you back to managing your school.
-        </p>
-        
+        </Paragraph>
+
         <div className="space-x-4">
-          <motion.button
+          <Button
+            onClick={() => navigate(-1)}
+            className="border border-surface-300 text-surface-700 hover:bg-surface-50"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => navigate(-1)}
-            className="px-4 py-2 border border-surface-300 text-surface-700 rounded-lg hover:bg-surface-50 transition-colors duration-200"
           >
             Go Back
-          </motion.button>
-          <motion.button
+          </Button>
+          <Button
+            onClick={() => navigate('/')}
+            className="bg-primary text-white hover:bg-primary/90"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => navigate('/')}
-            className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-200"
           >
             Go Home
-          </motion.button>
+          </Button>
         </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFoundPage;

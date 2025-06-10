@@ -1,10 +1,11 @@
-import Home from '../pages/Home'
-import Dashboard from '../pages/Dashboard'
-import Students from '../pages/Students'
-import Classes from '../pages/Classes'
-import Attendance from '../pages/Attendance'
-import Grades from '../pages/Grades'
-import Announcements from '../pages/Announcements'
+import HomePage from '@/components/pages/HomePage';
+import DashboardPage from '@/components/pages/DashboardPage';
+import StudentsPage from '@/components/pages/StudentsPage';
+import ClassesPage from '@/components/pages/ClassesPage';
+import AttendancePage from '@/components/pages/AttendancePage';
+import GradesPage from '@/components/pages/GradesPage';
+import AnnouncementsPage from '@/components/pages/AnnouncementsPage';
+import NotFoundPage from '@/components/pages/NotFoundPage';
 
 export const routes = {
   home: {
@@ -12,49 +13,49 @@ export const routes = {
     label: 'Home',
     path: '/',
     icon: 'Home',
-    component: Home
+component: HomePage
   },
   dashboard: {
     id: 'dashboard',
     label: 'Dashboard',
     path: '/dashboard',
     icon: 'LayoutDashboard',
-    component: Dashboard
+component: DashboardPage
   },
   students: {
     id: 'students',
     label: 'Students',
     path: '/students',
     icon: 'Users',
-    component: Students
+component: StudentsPage
   },
   classes: {
     id: 'classes',
     label: 'Classes',
     path: '/classes',
     icon: 'BookOpen',
-    component: Classes
+component: ClassesPage
   },
   attendance: {
     id: 'attendance',
     label: 'Attendance',
     path: '/attendance',
     icon: 'Calendar',
-    component: Attendance
+component: AttendancePage
   },
   grades: {
     id: 'grades',
     label: 'Grades',
     path: '/grades',
     icon: 'Award',
-    component: Grades
+component: GradesPage
   },
   announcements: {
     id: 'announcements',
     label: 'Announcements',
     path: '/announcements',
     icon: 'Megaphone',
-    component: Announcements
+component: AnnouncementsPage
   }
 }
 
